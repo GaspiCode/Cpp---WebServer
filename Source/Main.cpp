@@ -1,9 +1,11 @@
 #include "TcpListener.cpp"
 
 int main(){
-    std::unique_ptr<TcpListener> pTcpListener(new TcpListener("192.168.1.1",8080));
+    std::unique_ptr<TcpListener> pTcpListener(new TcpListener("0.0.0.0",8080));
     
     pTcpListener->Init();
+
+    //pTcpListener->Run();
 
 
 
